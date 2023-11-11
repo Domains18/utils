@@ -71,4 +71,10 @@ func (d *Database) WithTransaction(function func() error) error{
 		tx.Rollback()
 		return err
 	}
+	if err := tx.Commit().Error; err != nil{
+		return err
+	}
+	return nil
 }
+
+
