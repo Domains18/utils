@@ -77,4 +77,4 @@ func (d *Database) WithTransaction(function func() error) error{
 	return nil
 }
 
-
+func (d *Database) 
