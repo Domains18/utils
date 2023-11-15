@@ -8,5 +8,8 @@ type option struct {
 	query []Query
 	order any
 	offset int
-	
+	limit int
+	preloads []string
 }
+
+type 
