@@ -11,6 +11,14 @@ type express struct {
 	inntializeGit bool
 }
 
+var packages = []string{
+	"express",
+	"body-parser",
+	"cors",
+	"dotenv",
+	"nodemon",
+}
+
 func CreateExpressProject(projectName string, inntializeGit bool) express {
 	project := express{projectName: projectName, inntializeGit: inntializeGit}
 
@@ -31,7 +39,7 @@ func CreateExpressProject(projectName string, inntializeGit bool) express {
 		fmt.Printf("error initializing  the project with npm: %v\n", err)
 	}
 	fmt.Printf("installing packages...................")
-	
+
 
 	return project
 }
