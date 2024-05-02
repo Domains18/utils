@@ -35,6 +35,9 @@ var devPackages = []string{
 	"ts-node-dev",
 	"@types/express",
 	"@types/bcrypt",
+	"@types/cookie-parser",
+	"@types/jsonwebtoken",
+	"@types/node",
 }
 
 func CreateExpressProject(projectName string, inntializeGit bool) express {
