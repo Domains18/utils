@@ -17,7 +17,15 @@ var packages = []string{
 	"cors",
 	"dotenv",
 	"nodemon",
+	"axios",
+	"bcrypt",
+	"cookie-parser",
+	"jsonwebtoken",
+	"http",
+	"prisma",
 }
+
+var devPackages = []string{}
 
 func CreateExpressProject(projectName string, inntializeGit bool) express {
 	project := express{projectName: projectName, inntializeGit: inntializeGit}
