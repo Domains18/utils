@@ -6,16 +6,13 @@ import (
 	"os/exec"
 )
 
-
-
-type express struct{
-	projectName string
+type express struct {
+	projectName   string
 	inntializeGit bool
 }
 
-
-func CreateExpressProject (projectName string, inntializeGit bool) express{
-	project := express{ projectName: projectName, inntializeGit: inntializeGit}
+func CreateExpressProject(projectName string, inntializeGit bool) express {
+	project := express{projectName: projectName, inntializeGit: inntializeGit}
 
 	err := os.Mkdir(projectName, os.ModePerm)
 	if err != nil {
@@ -27,17 +24,16 @@ func CreateExpressProject (projectName string, inntializeGit bool) express{
 	if err != nil {
 		fmt.Printf("error changing directory to project directory %v\n", err)
 	}
-	
+
 	cmd := exec.Command("npm", " init", "-y")
 	err = cmd.Run()
-	if err != nil{
-		fmt.Printf("error initializing  the project with npm: %v")
+	if err != nil {
+		fmt.Printf("error initializing  the project with npm: %v\n", err)
 	}
 
 	return project
 }
 
-
-func RequireNode(){
+func RequireNode() {
 
 }
