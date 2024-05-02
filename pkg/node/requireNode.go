@@ -60,8 +60,7 @@ func CreateExpressProject(projectName string, inntializeGit bool) express {
 		fmt.Printf("error initializing  the project with npm: %v\n", err)
 	}
 	fmt.Printf("installing packages...................")
-
-
+	
 	return project
 }
 
