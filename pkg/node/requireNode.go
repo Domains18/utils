@@ -25,7 +25,17 @@ var packages = []string{
 	"prisma",
 }
 
-var devPackages = []string{}
+var devPackages = []string{
+	"eslint",
+	"prettier",
+	"@typescript-eslint/parser",
+	"@typescript-eslint/eslint-plugin",
+	"typescript",
+	"ts-node",
+	"ts-node-dev",
+	"@types/express",
+	"@types/bcrypt",
+}
 
 func CreateExpressProject(projectName string, inntializeGit bool) express {
 	project := express{projectName: projectName, inntializeGit: inntializeGit}
