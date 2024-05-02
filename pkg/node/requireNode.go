@@ -31,7 +31,7 @@ func CreateExpressProject (projectName string, inntializeGit bool) express{
 	cmd := exec.Command("npm", " init", "-y")
 	err = cmd.Run()
 	if err != nil{
-		fmt.Printf("error initializing ")
+		fmt.Printf("error initializing  the project with npm: %v")
 	}
 
 	return project
