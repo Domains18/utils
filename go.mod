@@ -1,3 +1,3 @@
-module github.com/Domains18/matsumi-golang
+module github.com/Domains18/utils.git
 
-go 1.22.2
+go 1.23.1
